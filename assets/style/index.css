@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-btn:hover {
+    background-color: #444;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    top: 40px;
+    left: 0;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    min-width: 200px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.submenu .category {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submenu .category:hover {
+    background-color: #555;
+}
+
+/* Exibe o submenu ao passar o mouse sobre o menu ou o submenu */
+.menu:hover .submenu,
+.submenu:hover {
+    display: block;
+    opacity: 1;
+}
+
+#search {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.course {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.course img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.course h3 {
+    margin: 10px 0;
+}
+
+.course p {
+    font-size: 14px;
+    color: #555;
+}
