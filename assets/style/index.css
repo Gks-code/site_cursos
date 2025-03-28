@@ -122,3 +122,40 @@ header {
 .watch-btn:hover {
     background-color: #005f73;
 }
+
+
+@media (max-width: 450px) {
+    header {
+        padding: 15px;
+    }
+
+    #search {
+        width: 80%; /* Aumenta a largura da barra de pesquisa em telas pequenas */
+        margin-top: 15px;
+    }
+
+    .courses {
+        grid-template-columns: repeat(2, 1fr); /* Exibe 2 cursos por vez em telas pequenas */
+        padding: 10px;
+    }
+
+    .course {
+        min-height: 280px; /* Garante que o card tenha altura suficiente em telas pequenas */
+        padding: 15px;
+    }
+
+    .menu-btn {
+        width: 100%; /* Torna o botão de menu mais largo em telas pequenas */
+        padding: 12px;
+        margin-bottom: 10px; /* Espaçamento entre o botão e a pesquisa */
+    }
+
+    .submenu {
+        min-width: 100%; /* Ajusta o submenu para se alinhar melhor */
+    }
+
+    .watch-btn {
+        font-size: 14px; /* Reduz o tamanho da fonte do botão em telas pequenas */
+        padding: 8px 12px;
+    }
+}
