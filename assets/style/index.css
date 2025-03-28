@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #000000;
 }
 
 header {
@@ -124,7 +124,7 @@ header {
 }
 
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
     header {
         padding: 15px;
     }
